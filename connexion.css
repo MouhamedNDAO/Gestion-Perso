@@ -1,0 +1,71 @@
+/* Style CSS du corps de la page */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-image: url(R.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* Style CSS du div contenant la carte  */
+.card {
+    margin-bottom: 20px;
+    border: none
+}
+/* Style CSS du formulaire */
+.box {
+    width: 500px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: #191919;
+    ;
+    text-align: center;
+    transition: 0.25s;
+    margin-top: 100px
+}
+/* Style CSS des deux champ de text */
+.box input[type="text"],
+.box input[type="password"] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 10px 10px;
+    width: 250px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s
+}
+/* titre h1 */
+.box h1 {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500
+}
+/* quand on clique sur l'un des champs de text */
+.box input[type="text"]:focus,
+.box input[type="password"]:focus {
+    width: 300px;
+    border-color: #2ecc71
+}
+/* Style CSS du bouton submit */
+.box button a#submit{
+     color: #fff;
+}
+/* quand il est survole */
+.box button a#submit:hover{
+    text-decoration: none;
+}
+/* Pour le lien Mot de passe oublier */
+.forgot {
+    text-decoration: underline
+}
+/* Pour le lien inscription */
+.inscription {
+    text-decoration: underline
+}
