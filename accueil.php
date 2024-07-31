@@ -46,72 +46,12 @@
     
 </head>
 <body >
-        <!--Navbar-->
-            <div class="navbar fixed-top navbar-expand-md navbar-dark primary-color">
-                    <a href="#" class="navbar-brand ">UVS</a>
-                        <ul class="nav navbar-nav" >
-                            <li class="nav-item">
-                                <a class="nav-link 
-                                font-weight-bold" 
-                                href="../PHP/recup_donne.php" >Liste des Personnels</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link
-                                font-weight-bold" 
-                                href="../PHP/blablacar.php" >blablacar</a>
-                            </li>
-                            <li class="nav-item" >
-                                <a class="nav-link
-                                font-weight-bold" 
-                                href="../PHP/parametre.php">Parametres</a>
-                            </li>
-                        </ul>
-                        <div class="form-user-icon-main-container" style="position:relative; left:380px">
-                            <div class="container-form-user-icon" style="display:flex;">
-                                <div class="form-search-container">
-                                    <form class="form-inline">
-                                        <input class="form-control" type="search" placeholder="Search" aria-label="Search" style="width:300px; height:32px;">
-                                        <button class="btn bg-light btn-sm" type="submit">
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path fill-rule="evenodd" d="M11.5 7a4.499 4.499 0 11-8.998 0A4.499 4.499 0 0111.5 7zm-.82 4.74a6 6 0 111.06-1.06l3.04 3.04a.75.75 0 11-1.06 1.06l-3.04-3.04z"></path></svg>
-                                        </button>
-                                    </form>
-                                </div>
-
-                                
-                                <div class="icon-user-container">
-                                    <!--Icon user-->
-                                        <ul class="navbar-nav">
-                                            <li class="nav-item dropdown">
-                                                <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
-                                                        <i>
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-person " viewBox="0 0 16 16">
-                                                            <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
-                                                            </svg>
-                                                            <span class="badge rounded-pill bg-danger">8</span>
-                                                        </i>
-                                                            <?php
-                                                            echo("<h8>".$usePrenom."</h8>");
-                                                            ?>
-                                                </a>
-                                                <ul class="dropdown-menu dropdown-menu-right dropdown-default" aria-labelledby="navbarScrollingDropdown">
-                                                    <li><a class="dropdown-item" href="#">Mon Compte</a></li>
-                                                    <li><a class="dropdown-item" href="#">Paramétre</a></li>
-                                                    <li><hr class="dropdown-divider"></li>
-                                                    <li><a class="dropdown-item" href="#">Déconnexion</a></li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    <!--Icon user-->
-                                </div>
-                            </div>
-                            
-                        </div>
-                        
-                </div>
-        <!--Navbar-->
+        <?php
+        include("navbar.php");
+        ?>
       
 
-    
+    <br><br>
     <div class="container-fluid">
         
           <!--Card Présentation-->
@@ -119,9 +59,9 @@
                     <img class="card-img-top img-fluid" src="../Image/28_sept_2018_Bannière-site-UVS_corporate.jpg" alt="Card image cap" style="width:fit-content; height:fit-content;">
                     <div class="card-body " style="display:flex;">
                         <div class="Gestion_containeur">
-                            <h2 class="card-title">Gestion des Personnels d'UVS</h2>
-                            <p class="card-text">Ce site est dedie aux peronnels de l'uvs afin qu'ils puisse y trouver les directives qu'ils doivent suivre
-                                pour le bon fonctionnement de l'universite.</p>
+                            <h2 class="card-title">SEN POSTE DE SANTE</h2>
+                            <p class="card-text">Ce site est dedie aux peronnels des postes de sante afin qu'ils puisse y trouver les directives qu'ils doivent suivre
+                                pour le bon fonctionnement des activites.</p>
                         </div>
                         <div class="FONEk text-center" >
 
@@ -144,8 +84,8 @@
                                             </path>
                                             </pattern>
                                         </defs>
-                                        <text text-anchor="middle" x="50" y="15" font-size="10" fill="white" fill-opacity="0.1">FONEK FOFU LA</text>
-                                        <text text-anchor="middle" x="50" y="15" font-size="10" fill="url(#wave)"  fill-opacity="1" >FONEK FOFU LA</text>
+                                        <text text-anchor="middle" x="50" y="15" font-size="10" fill="white" fill-opacity="0.1">VOTRE BIEN ETRE NOTRE CREDO</text>
+                                        <text text-anchor="middle" x="50" y="15" font-size="10" fill="url(#wave)"  fill-opacity="1" >VOTRE BIEN ETRE NOTRE CREDO</text>
                                     </svg>
                                 <!--Text animation wave-->
 
@@ -163,15 +103,16 @@
                     <div class="card mb-3 ">
                         <div class="row">
                             <div class="col-md-4">
-                            <img src="../Image/Journée de rencontre étudiant.png" class="img-fluid " alt="...">
+                            <img src="img/depistage diabete.jpeg" class="img-fluid " alt="...">
                             </div>
                             <div class="col-md-8 bg-primary">
                             <div class="card-body">
-                                <h5 class="card-title text-white"><b>Journées internationales des sciences économiques et de gestion</b></h5>
-                                <p class="card-text text-white"> cette conférence sera présidée par l'éminant professeur monsieur Alexandre FAYE président de CEDEAO
-                                    et chercheur à harvard 
+                                <h5 class="card-title text-white"><b>Journées de sensibilisation et de depistage du diabete</b></h5>
+                                <p class="card-text text-white"> Dans le cadre de la célébration de la journée mondiale de lutte contre le diabète, l'association des femmes du Ministère 
+                                    de la Santé et de l'Action sociale, en collaboration avec la division de lutte contre les maladies non transmissibles, a organisé une séance de dépistage 
+                                    du diabète et de l'hypertension artérielle pour les agents dudit ministère. Ainsi, près de 200 agents ont été dépistés et sensibilisés.
                                 </p>
-                                <p class="text-white"><b>cette conférence ce tiendra le samedi 14 novembre 2021 à l'emphithéâtre du ENO de dakar </b></p>
+                                <p class="text-white"><b>cette journee auras lieu dans le centre de sante de Cambererne 2 </b></p>
                                 <p class="card-text text-white"><small>Last updated 3 mins ago</small></p>
                             </div>
                             </div>
@@ -182,13 +123,16 @@
                     <div class="card mb-3" >
                         <div class="row ">
                             <div class="col-md-4">
-                            <img src="../Image/Aletier sur le numérique et l'environnement.png" class="img-fluid" alt="...">
+                            <img src="img/sang.jpeg" class="img-fluid" alt="...">
                             </div>
                             <div class="col-md-8 bg-success">
                             <div class="card-body">
-                                <h5 class="card-title text-white"><b>Atelier sur le Numérique et l'environnement</b></h5>
-                                <p class="card-text text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur eveniet quo perferendis amet nemo doloremque quod quibusdam distinctio nisi, exercitationem, consectetur ipsam reiciendis unde, laudantium cupiditate magnam quam optio perspiciatis.</p>
-                                <p class="card-text text-white"><small>Last updated 3 mins ago</small></p>
+                                <h5 class="card-title text-white"><b>Journée mondiale du don de sang</b></h5>
+                                <p class="card-text text-white">" J'exhorte tout un chacun à communiquer avec son entourage pour inciter tout le monde à accepter de prendre 30mn de son temps pour effectuer un don de sang et contribuer à sauver des vies.
+Le défi est grand puisque le Sénégal ne dispose que de 6,4 dons de sang pour 1.000 habitants alors que les besoins sont estimés à 10 dons pour 1000 habitants.
+Le Sénégal a une forte tradition d'entraide et de solidarité et je compte sur la mobilisation de tous, et particulièrement des jeunes pour résorber ce gap.
+"Extrait du message du Ministre de la Santé et de L'action sociale donc n'hesitons pas a vous rendre dans le centre de sante le plus proche le 24 Aout afin de pouvoir contribuer a ce noble cause</p>
+                                <p class="card-text text-white"><small>Last updated 10 mins ago</small></p>
                             </div>
                             </div>
                         </div>
@@ -198,7 +142,7 @@
                     <div class="card mb-3 ">
                         <div class="row">
                             <div class="col-md-4">
-                            <img src="../Image/Formation sur flutter.jpg" class="img-fluid " alt="...">
+                            <img src="img/sang.jpeg" class="img-fluid " alt="...">
                             </div>
                             <div class="col-md-8 " style="background-color:orange">
                             <div class="card-body">
@@ -207,7 +151,7 @@
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab distinctio consequatur quasi numquam, labore doloribus. Voluptas, aperiam cupiditate voluptatem quibusdam ratione vel reiciendis maiores reprehenderit unde commodi atque. Assumenda, dignissimos.
                                 </p>
                                 <p class="text-white"><b>cette conférence ce tiendra le samedi 14 novembre 2021 à l'emphithéâtre du ENO de dakar </b></p>
-                                <p class="card-text text-white"><small>Last updated 3 mins ago</small></p>
+                                <p class="card-text text-white"><small>Last updated 2 hours ago</small></p>
                             </div>
                             </div>
                         </div>
@@ -215,19 +159,20 @@
                 </div>
             </div>
             <!--Grille de carte -->
+            
 
          <!--Onglet-->
 
 
             <ul class="nav nav-tabs" id="myTab" role="tablist">
                 <li class="nav-item" role="presentation">
-                    <a class="nav-link active" href="#home" data-toggle="tab"   role="tab" >Liste Personnel</a>
+                    <a class="nav-link active" href="#home" data-toggle="tab"   role="tab" >Liste Personnels Present</a>
                 </li>
                 <li class="nav-item" role="presentation">
-                    <a class="nav-link" href="#profile" data-toggle="tab"  role="tab" >Payement</a>
+                    <a class="nav-link" href="#profile" data-bs-toggle="tab"  role="tab" >Payement</a>
                 </li>
                 <li class="nav-item" role="presentation">
-                    <a class="nav-link" href="#contact" data-toggle="tab"  role="tab">Calendrier de tâches</a>
+                    <a class="nav-link" href="#contact" data-toggle="tab"  role="tab">Calendrier des tâches</a>
                 </li>
             </ul>
             <div class="tab-content" id="myTabContent">
@@ -298,7 +243,7 @@
                                                     <tr>
                                                         <th scope="row">20</th>
                                                         <td>Avril</td>
-                                                        <td>2021</td>
+                                                        <td>2024</td>
                                                         <td>12h00</td>
                                                         <td>50.000 Fcfa</td>
                                                     </tr>
@@ -442,9 +387,9 @@
 
                 <!-- Copyright -->
                 <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-                    © 2021 Copyright:
+                    © 2024 Copyright:
                     <a class="text-white" href="#"><b>Gestion employe</b></a>
-                    <h4>By UVS Etudiant</h4>
+                    <h4>By UN-CHK Etudiant</h4>
                 </div>
                 <!-- Copyright -->
             </footer>

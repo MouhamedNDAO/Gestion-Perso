@@ -23,18 +23,26 @@ $error= isset($_GET['error']) ? $_GET['error'] : '';
           }
         </style> -->
         <div class="container">
+            <div class="row">
+                <div class="col-ms-12">
+                    <div class="perso">
+                    <h3>GESTION DES PERSONNELS DU POST DE SANTE</h3></div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
     <div class="row">
         <div class="col-md-6">
             <div class="card">
-                <form class="box">
+                <form class="box" action="Identification.php" method="POST">
                     <h1>SE CONNECTER</h1>
-                    <p class="text-muted"> Please enter your login and password!</p> 
+                    <p class="text-muted"> Veuiller enter votre login et mot de passe!</p> 
                     <input type="text" name="" placeholder="Login"> 
                     <input type="password" name="" placeholder="Password"> 
                     <a class="forgot text-muted" href="#">Mot de passe oublier?</a><br>
-                    <a class="inscription text-muted" href="contact.html">Je n'est pas encore de compte</a><br><br> 
+                    <a class="inscription text-muted" href="contact.php">Je n'est pas encore de compte</a><br><br> 
                     <button type="submit" class="btn btn-primary btn-circle" >
-                        <a href="accueil.php" id = "submit">Se connecter</a>
+                        Se connecter
                     </button>
                 </form>
             </div>

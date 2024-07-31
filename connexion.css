@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
-    background-image: url(R.jpg);
+    background-image: url(img/gestionPerso.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -20,7 +20,6 @@ body {
     top: 50%;
     left: 50%;
     background: #191919;
-    ;
     text-align: center;
     transition: 0.25s;
     margin-top: 100px
@@ -60,6 +59,8 @@ body {
 /* quand il est survole */
 .box button a#submit:hover{
     text-decoration: none;
+    transform: color(#2ecc71);
+    transition: 15ms;
 }
 /* Pour le lien Mot de passe oublier */
 .forgot {
@@ -68,4 +69,17 @@ body {
 /* Pour le lien inscription */
 .inscription {
     text-decoration: underline
+}
+/* Pour le text gestion perso */
+.perso h3{
+    color: #0000ff;
+    text-transform: uppercase;
+    font-weight: 500
+}
+.perso {
+   position: absolute;
+   left: 25%;
+   padding: 15px;
+   text-align: center;
+   margin-top: 50px;
 }
