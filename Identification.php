@@ -12,7 +12,7 @@
         $password_use = htmlspecialchars($_POST["Password"]);
         
         if(empty($login) && empty($password_use )){
-                header("location:Login.php");
+                header("location:connexion.php");
         }
         else{
             $request_sql = $connexion->prepare("SELECT email,password_user FROM gestion WHERE email = :email");
