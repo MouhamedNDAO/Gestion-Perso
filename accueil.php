@@ -56,7 +56,7 @@
         
           <!--Card Présentation-->
                 <div class="card">
-                    <img class="card-img-top img-fluid" src="../Image/28_sept_2018_Bannière-site-UVS_corporate.jpg" alt="Card image cap" style="width:fit-content; height:fit-content;">
+                    <img class="card-img-top img-fluid" src="img/banniere.jpg" alt="Card image cap" style="width:fit-content; height:fit-content;">
                     <div class="card-body " style="display:flex;">
                         <div class="Gestion_containeur">
                             <h2 class="card-title">SEN POSTE DE SANTE</h2>
@@ -142,15 +142,16 @@ Le Sénégal a une forte tradition d'entraide et de solidarité et je compte sur
                     <div class="card mb-3 ">
                         <div class="row">
                             <div class="col-md-4">
-                            <img src="img/sang.jpeg" class="img-fluid " alt="...">
+                            <img src="img/palu.png" class="img-fluid " alt="...">
                             </div>
                             <div class="col-md-8 " style="background-color:orange">
                             <div class="card-body">
-                                <h5 class="card-title text-white"><b>Formation sur flutter</b></h5>
+                                <h5 class="card-title text-white"><b>Lutte contre le paludisme</b></h5>
                                 <p class="card-text text-white">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab distinctio consequatur quasi numquam, labore doloribus. Voluptas, aperiam cupiditate voluptatem quibusdam ratione vel reiciendis maiores reprehenderit unde commodi atque. Assumenda, dignissimos.
+                                A l'occasion de la Journée mondiale de lutte contre le paludisme, l'association des pharmaciens du Senegal a lancé une campagne de sensibilisation auprès des habitants de Dakar.
+Alerter sur la surconsommation et le mauvais usage des traitements antipaludéens: c'est la mission que ce sont donné ces pharmaciens de la capitale senegalaise Dakar. Selon eux, les communautés locales devraient prendre des mesures proactives pour éradiquer le paludisme, comme en évitant les eaux stagnantes...
                                 </p>
-                                <p class="text-white"><b>cette conférence ce tiendra le samedi 14 novembre 2021 à l'emphithéâtre du ENO de dakar </b></p>
+                                <p class="text-white"><b>cette conférence ce tiendra le mercredi 21 Aout 2024 à l'UCAD </b></p>
                                 <p class="card-text text-white"><small>Last updated 2 hours ago</small></p>
                             </div>
                             </div>
@@ -187,24 +188,8 @@ Le Sénégal a une forte tradition d'entraide et de solidarité et je compte sur
                                     <th scope="col">Email</th>
                                     </tr>
                                 </thead>
-                                <?php
-                                    $reponse=$connexion->query("SELECT * FROM gestion");
-                                    while($données=$reponse->fetch()){
-                                        $email=$données["email"];
-                                        $prenom=$données["prenom"];
-                                        $nom=$données["nom"];
-                                ?>
-                                      <tbody>
-                                      <tr>
-                                      <th scope="row">1</th>
-                                      <td><?php echo("<p>"."$prenom"."</p>");?></td>
-                                      <td><?php echo("<p>"."$nom"."</p>");?></td>
-                                      <td><?php echo("<p>"."$email"."</p>");?></td>
-                                      </tr>
-                                  </tbody>
-                                    <?php
-                                        }
-                                    ?> 
+                                
+                                
                                 
                             </table>
                 </div>

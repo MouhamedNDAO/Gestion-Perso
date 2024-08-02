@@ -1,6 +1,3 @@
-<?php
-session_start();
-?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -27,7 +24,7 @@ session_start();
 
 <!--Navbar-->
 <div class="navbar fixed-top navbar-expand-md navbar-dark primary-color">
-        <a href="../Gestion-des-Personnels-de-l-UVS/accueil.php" class="navbar-brand ">UN-CHK</a>
+        <a href="../Gestion-des-Personnels-de-l-UVS/accueil.php" class="navbar-brand ">POSTE</a>
             <ul class="nav navbar-nav" >
             <li class="nav-item">
                     <a class="nav-link
