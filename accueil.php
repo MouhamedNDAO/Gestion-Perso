@@ -56,17 +56,17 @@
         
           <!--Card Présentation-->
                 <div class="card">
-                    <img class="card-img-top img-fluid" src="img/banniere.jpg" alt="Card image cap" style="width:fit-content; height:fit-content;">
+                    <img class="card-img-top img-fluid" src="img/ban.jpeg" alt="Card image cap" style="width:fit-content; height:fit-content;">
                     <div class="card-body " style="display:flex;">
                         <div class="Gestion_containeur">
-                            <h2 class="card-title">SEN POSTE DE SANTE</h2>
-                            <p class="card-text">Ce site est dedie aux peronnels des postes de sante afin qu'ils puisse y trouver les directives qu'ils doivent suivre
+                            <h2 class="card-title">VOTRE BIEN ETRE NOTRE CREDO</h2>
+                            <p class="card-text">Ce site est dedie aux peronnels des postes de sante afin qu'ils puissent y trouver les directives qu'ils doivent suivre
                                 pour le bon fonctionnement des activites.</p>
                         </div>
                         <div class="FONEk text-center" >
 
                                 <!--Text animation wave-->
-                                    <svg class="animation_fonek" style="width:200px; height:50px" viewbox="0 0 100 20">
+                                    <svg class="animation_fonek" style="width:250px; height:50px" viewbox="0 0 100 20">
                                         <defs>
                                             <linearGradient id="gradient">
                                             <stop color="#000"/>
@@ -84,8 +84,8 @@
                                             </path>
                                             </pattern>
                                         </defs>
-                                        <text text-anchor="middle" x="50" y="15" font-size="10" fill="white" fill-opacity="0.1">VOTRE BIEN ETRE NOTRE CREDO</text>
-                                        <text text-anchor="middle" x="50" y="15" font-size="10" fill="url(#wave)"  fill-opacity="1" >VOTRE BIEN ETRE NOTRE CREDO</text>
+                                        <text text-anchor="middle" x="50" y="15" font-size="10" fill="white" fill-opacity="0.1">SEN POSTE SANTE</text>
+                                        <text text-anchor="middle" x="50" y="15" font-size="10" fill="url(#wave)"  fill-opacity="1" >SEN POSTE SANTE</text>
                                     </svg>
                                 <!--Text animation wave-->
 
@@ -129,9 +129,9 @@
                             <div class="card-body">
                                 <h5 class="card-title text-white"><b>Journée mondiale du don de sang</b></h5>
                                 <p class="card-text text-white">" J'exhorte tout un chacun à communiquer avec son entourage pour inciter tout le monde à accepter de prendre 30mn de son temps pour effectuer un don de sang et contribuer à sauver des vies.
-Le défi est grand puisque le Sénégal ne dispose que de 6,4 dons de sang pour 1.000 habitants alors que les besoins sont estimés à 10 dons pour 1000 habitants.
-Le Sénégal a une forte tradition d'entraide et de solidarité et je compte sur la mobilisation de tous, et particulièrement des jeunes pour résorber ce gap.
-"Extrait du message du Ministre de la Santé et de L'action sociale donc n'hesitons pas a vous rendre dans le centre de sante le plus proche le 24 Aout afin de pouvoir contribuer a ce noble cause</p>
+                                        Le défi est grand puisque le Sénégal ne dispose que de 6,4 dons de sang pour 1.000 habitants alors que les besoins sont estimés à 10 dons pour 1000 habitants.
+                                        Le Sénégal a une forte tradition d'entraide et de solidarité et je compte sur la mobilisation de tous, et particulièrement des jeunes pour résorber ce gap.
+                                        "Extrait du message du Ministre de la Santé et de L'action sociale donc n'hesitez pas a vous rendre dans le centre de sante le plus proche le 24 Aout afin de pouvoir contribuer a ce noble cause</p>
                                 <p class="card-text text-white"><small>Last updated 10 mins ago</small></p>
                             </div>
                             </div>
@@ -149,10 +149,31 @@ Le Sénégal a une forte tradition d'entraide et de solidarité et je compte sur
                                 <h5 class="card-title text-white"><b>Lutte contre le paludisme</b></h5>
                                 <p class="card-text text-white">
                                 A l'occasion de la Journée mondiale de lutte contre le paludisme, l'association des pharmaciens du Senegal a lancé une campagne de sensibilisation auprès des habitants de Dakar.
-Alerter sur la surconsommation et le mauvais usage des traitements antipaludéens: c'est la mission que ce sont donné ces pharmaciens de la capitale senegalaise Dakar. Selon eux, les communautés locales devraient prendre des mesures proactives pour éradiquer le paludisme, comme en évitant les eaux stagnantes...
+                                Alerter sur la surconsommation et le mauvais usage des traitements antipaludéens: c'est la mission que ce sont donné ces pharmaciens de la capitale senegalaise Dakar. Selon eux, les communautés locales devraient prendre des mesures proactives pour éradiquer le paludisme, comme en évitant les eaux stagnantes...
                                 </p>
                                 <p class="text-white"><b>cette conférence ce tiendra le mercredi 21 Aout 2024 à l'UCAD </b></p>
                                 <p class="card-text text-white"><small>Last updated 2 hours ago</small></p>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card mb-3 ">
+                        <div class="row">
+                            <div class="col-md-4">
+                            <img src="img/octobre_rose.webp" class="img-fluid " alt="...">
+                            </div>
+                            <div class="col-md-8 " style="background-color:#ffc0cb ">
+                            <div class="card-body">
+                                <h5 class="card-title text-white"><b>Octobre Rose</b></h5>
+                                <p class="card-text text-white">
+                                La cérémonie de lancement ‘’d’octobre rose’’ se tient jeudi à 16 heures au Monument de la Renaissance. 
+                                Organisé dans le cadre de la célébration d’octobre rose, par la Ligue Sénégalaise Contre le Cancer (LISCA), en relation avec le ministère de la santé, cet événement sera marqué par la mise en place d’un ruban rose humain géant avec toute sa chorégraphie. 
+                                Outre l’illumination du Monument de la Renaissance pour clôturer la manifestation, figure aussi au programme la prestation de quelques artistes de la place qui délivreront des messages au Public.
+                                </p>
+                                <p class="text-white"><b> Votre presence est vivement souhaite </b></p>
+                                <p class="card-text text-white"><small>Last updated 3 weeks ago</small></p>
                             </div>
                             </div>
                         </div>
@@ -167,10 +188,10 @@ Alerter sur la surconsommation et le mauvais usage des traitements antipaludéen
 
             <ul class="nav nav-tabs" id="myTab" role="tablist">
                 <li class="nav-item" role="presentation">
-                    <a class="nav-link active" href="#home" data-toggle="tab"   role="tab" >Liste Personnels Present</a>
+                    <a class="nav-link active" href="#home" data-toggle="tab"   role="tab" >Liste Personnels Presents</a>
                 </li>
                 <li class="nav-item" role="presentation">
-                    <a class="nav-link" href="#profile" data-bs-toggle="tab"  role="tab" >Payement</a>
+                    <a class="nav-link" href="#profile" data-bs-toggle="tab"  role="tab" >Paiement</a>
                 </li>
                 <li class="nav-item" role="presentation">
                     <a class="nav-link" href="#contact" data-toggle="tab"  role="tab">Calendrier des tâches</a>
@@ -206,11 +227,11 @@ Alerter sur la surconsommation et le mauvais usage des traitements antipaludéen
                                 <div class="card-body">
 
                                     <!--header payement-->
-                                    <h5 class="card-title text-center" style="color:white;">Payement</h5>
+                                    <h5 class="card-title text-center" style="color:white;">Paiement</h5>
                                     <!--header payement-->
 
                                     <!--Informations Allocations de payement-->
-                                    <p class="card-text" style="color:white;">Bonsoir votre allocations de Payement du mois de Novembre n'est pas encore disponible</p>
+                                    <p class="card-text" style="color:white;">Bonsoir votre allocations de Paiement du mois de Novembre n'est pas encore disponible</p>
                                     <!--Informations Allocations de payement-->
 
                                     <!--Tableau Payement-->
@@ -373,8 +394,8 @@ Alerter sur la surconsommation et le mauvais usage des traitements antipaludéen
                 <!-- Copyright -->
                 <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
                     © 2024 Copyright:
-                    <a class="text-white" href="#"><b>Gestion employe</b></a>
-                    <h4>By UN-CHK Etudiant</h4>
+                    <a class="text-white" href="#"><b>Gestion personnels</b></a>
+                    <h4>By GHOST DEVS</h4>
                 </div>
                 <!-- Copyright -->
             </footer>
