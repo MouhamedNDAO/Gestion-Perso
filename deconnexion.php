@@ -3,7 +3,7 @@
     session_start();
 
     //connexion base de donnée
-    include("Connexion_base_de_données.php");
+    include("session_conn.php");
 
     //close déconnexion base de donnée
     $connexion=null;

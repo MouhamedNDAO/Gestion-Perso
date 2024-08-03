@@ -1,5 +1,5 @@
 <?php
-    include("Connexion_base_de_données.php");
+    include("session_conn.php");
 ?>
 <!DOCTYPE html>
 <html>
@@ -21,7 +21,7 @@
             if(isset($_POST["submit"])){
             $file="";
             $file=$_FILES["image"]["name"];
-            $upload="../Image/".$file;
+            $upload="img/".$file;
             move_uploaded_file($_FILES["image"]["tmp_name"],$upload);
             
             $insertion=$connexion->prepare("INSERT INTO evenement(nom_evenement,information,image_evenement) VALUES(?,?,?)") OR die(print_r($connexion->errorInfo()));
