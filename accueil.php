@@ -2,7 +2,7 @@
     session_start();
 
     //connexion base de données 
-    include("Connexion_base_de_données.php");
+    include("session_conn.php");
 
     if(isset($_SESSION["Email"])){
         $userEmail = $_SESSION["Email"];

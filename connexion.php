@@ -37,10 +37,10 @@ $error= isset($_GET['error']) ? $_GET['error'] : '';
                 <form class="box" action="Identification.php" method="POST">
                     <h1>SE CONNECTER</h1>
                     <p class="text-muted"> Veuiller enter votre login et mot de passe!</p> 
-                    <input type="text" name="" placeholder="Login"> 
-                    <input type="password" name="" placeholder="Password"> 
+                    <input type="text" name="Email" placeholder="Login"> 
+                    <input type="password" name="Password" placeholder="Password"> 
                     <a class="forgot text-muted" href="#">Mot de passe oublier?</a><br>
-                    <a class="inscription text-muted" href="contact.php">Je n'est pas encore de compte</a><br><br> 
+                    <a class="inscription text-muted" href="Formulair_inscription.php">Je n'est pas encore de compte</a><br><br> 
                     <button type="submit" class="btn btn-primary btn-circle" >
                         Se connecter
                     </button>
