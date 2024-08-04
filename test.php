@@ -1,14 +1,14 @@
 <?php
-if(isset($_POST["nom"]) && isset($_POST["prenom"]) && isset($_POST["adresse"]) && isset($_POST["email"]) && isset($_POST["calendrier"]) && isset($_POST["fonction"]) && isset($_POST["specialite"]) && isset($_POST["msg"])){
-    $nom = $_POST["nom"];
-    $prenom =$_POST["prenom"];
-    $adresse = $_POST["adresse"];
-    $datenaiss = $_POST["anniversaire"];
-    $email =$_POST["email"];
-    $fontion = $_POST["fonction"];
-    $specialite = $_POST["specialite"];
-    $info = $_POST["msg"];
-    $sexe = $_POST["choice"];
+if(!empty($_POST["prenom"]) && !empty($_POST["nom"]) && !empty($_POST["email"]) && !empty($_POST["password"]) && !empty($_POST["adresse"]) && !empty($_POST["anniversaire"]) && !empty($_POST["fonction"]) && !empty($_POST["specialite"])){
+    $nom = $_POST["prenom"];
+    $prenom =$_POST["nom"];
+    $adresse = $_POST["email"];
+    $datenaiss = $_POST["password"];
+    $email =$_POST["adresse"];
+    $fontion = $_POST["anniversaire"];
+    $specialite = $_POST["fonction"];
+    $info = $_POST["specialite"];
+    $sexe = $_POST["sexe"];
      echo "c'est fait ! votre inscription a etait bien prise en charge Mr ".$prenom." ".$nom ;
  }else{
      echo "Votre inscription n'est pas complete";
