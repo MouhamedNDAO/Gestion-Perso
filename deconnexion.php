@@ -14,5 +14,5 @@
     session_destroy();
     unset($_SESSION["Email"]);
     // redirection page login
-    header("location:Login.php");
+    header("location:connexion.php");
 ?>

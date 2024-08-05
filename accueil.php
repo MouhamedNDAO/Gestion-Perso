@@ -210,7 +210,24 @@
                                     </tr>
                                 </thead>
                                 
-                                
+                                <?php
+                                    $reponse=$connexion->query("SELECT * FROM gestion");
+                                    while($données=$reponse->fetch()){
+                                        $email=$données["email"];
+                                        $prenom=$données["prenom"];
+                                        $nom=$données["nom"];
+                                ?>
+                                      <tbody>
+                                      <tr>
+                                      <th scope="row">1</th>
+                                      <td><?php echo("<p>"."$prenom"."</p>");?></td>
+                                      <td><?php echo("<p>"."$nom"."</p>");?></td>
+                                      <td><?php echo("<p>"."$email"."</p>");?></td>
+                                      </tr>
+                                  </tbody>
+                                    <?php
+                                        }
+                                    ?> 
                                 
                             </table>
                 </div>
@@ -245,15 +262,30 @@
                                                         <th scope="col">Montant</th>
                                                     </tr>
                                                 </thead>
+                                                <?php
+                                                $request=$connexion->prepare("SELECT * FROM payement WHERE email = :email ");
+                                                $request->bindValue(':email',$userEmail, PDO::PARAM_STR);
+                                                $request->execute();
+                                                while($données=$request->fetch()){
+                                                    $email=$données["email"];
+                                                    $date=$données["date_payement"];
+                                                    $heure=$données["heure_payement"];
+                                                    $montant=$données["montant"];
+                                                ?>
+
                                                 <tbody class="table-light">
                                                     <tr>
-                                                        <th scope="row">20</th>
+                                                        <th scope="row"><?php echo($date);?></th>
                                                         <td>Avril</td>
-                                                        <td>2024</td>
-                                                        <td>12h00</td>
-                                                        <td>50.000 Fcfa</td>
+                                                        <td>2021</td>
+                                                        <td><?php echo($heure);?></td>
+                                                        <td><?php echo($montant);?></td>
                                                     </tr>
                                                 </tbody>
+
+                                                <?php
+                                                    }
+                                                ?> 
                                     </table>
                                     <!--Tableau Payement-->
 
