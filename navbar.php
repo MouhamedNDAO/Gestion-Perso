@@ -1,4 +1,6 @@
-
+<?php
+    include("session_conn.php");
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -24,22 +26,22 @@
 
 <!--Navbar-->
 <div class="navbar fixed-top navbar-expand-md navbar-dark primary-color">
-        <a href="../Gestion-des-Personnels-de-l-UVS/accueil.php" class="navbar-brand ">POSTE</a>
+        <a href="../gp/accueil.php" class="navbar-brand ">POSTE</a>
             <ul class="nav navbar-nav" >
             <li class="nav-item">
                     <a class="nav-link
                     font-weight-bold" 
-                    href="../Gestion-des-Personnels-de-l-UVS/accueil.php" >Accueil</a>
+                    href="../gp/accueil.php" >Accueil</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link 
                     font-weight-bold" 
-                    href="../Gestion-des-Personnels-de-l-UVS/Liste_personne.php" >Liste des Personnels</a>
+                    href="../gp/Liste_personne.php" >Liste des Personnels</a>
                 </li>
                 <li class="nav-item" >
                     <a class="nav-link
                     font-weight-bold" 
-                    href="../Gestion-des-Personnels-de-l-UVS/parametre.php">Parametres</a>
+                    href="../gp/parametre.php">Parametres</a>
                 </li>
             </ul>
             <div class="form-user-icon-main-container" style="position:relative; left:380px">
@@ -66,14 +68,14 @@
                                                 <span class="badge rounded-pill bg-danger">8</span>
                                             </i>
                                                 <?php
-                                                echo("<h8>".$userPrenom."</h8>");
+                                                echo("<h8>".$usePrenom."</h8>");
                                                 ?>
                                     </a>
                                     <ul class="dropdown-menu dropdown-menu-right dropdown-default" aria-labelledby="navbarScrollingDropdown">
                                         <li><a class="dropdown-item" href="#">Mon Compte</a></li>
                                        <!-- <li><a class="dropdown-item" href="#">Paramétre</a></li>-->
                                         <li><hr class="dropdown-divider"></li>
-                                        <li><a class="dropdown-item" href="#">Déconnexion</a></li>
+                                        <li><a class="dropdown-item" href="deconnexion.php">Déconnexion</a></li>
                                     </ul>
                                 </li>
                             </ul>

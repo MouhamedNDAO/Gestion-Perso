@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <title>Liste personnel</title>
     </head>
-    <body>
+    <body style = "background-image:url(img/personnels.jpg); background-size: cover">
     <?php
         include("navbar.php");
         ?>
