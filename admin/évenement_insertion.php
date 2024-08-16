@@ -1,6 +1,4 @@
-<?php
-    include("session_conn.php");
-?>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -17,6 +15,7 @@
     </body>
     <!--Insertion base de données-->
             <?php
+            include "session_conn.php";
             //insertion base de donnée
             if(isset($_POST["submit"])){
             $file="";

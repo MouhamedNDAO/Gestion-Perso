@@ -39,10 +39,20 @@
     <link rel="stylesheet" href="../CSS/acceuil.css">
     <!--CDN CSS-->
 
+    <!--JS Delivr-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!--JS Delivr-->
+
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
     
     <title>Accueil</title>
+    
     
 </head>
 <body >
@@ -191,7 +201,7 @@
                     <a class="nav-link active" href="#home" data-toggle="tab"   role="tab" >Liste Personnels Presents</a>
                 </li>
                 <li class="nav-item" role="presentation">
-                    <a class="nav-link" href="#profile" data-bs-toggle="tab"  role="tab" >Paiement</a>
+                    <a class="nav-link" href="#profile" data-toggle="tab"  role="tab" >Paiements</a>
                 </li>
                 <li class="nav-item" role="presentation">
                     <a class="nav-link" href="#contact" data-toggle="tab"  role="tab">Calendrier des tâches</a>
@@ -219,7 +229,7 @@
                                 ?>
                                       <tbody>
                                       <tr>
-                                      <th scope="row">1</th>
+                                      <th scope="row">*</th>
                                       <td><?php echo("<p>"."$prenom"."</p>");?></td>
                                       <td><?php echo("<p>"."$nom"."</p>");?></td>
                                       <td><?php echo("<p>"."$email"."</p>");?></td>
@@ -238,7 +248,7 @@
                         <div class="card bg-primary">
                             <div class="row g-0">
                                 <div class="col-md-4">
-                                <img src="../Image/Payement_vector.png" class="img-fluid rounded-start" alt="...">
+                                <img src="img/Payement_vector.png" class="img-fluid rounded-start" alt="...">
                                 </div>
                                 <div class="col-md-8">
                                 <div class="card-body">
@@ -295,7 +305,7 @@
                                                 <h4 style="color:white;">Votre solde:</h4>
                                             </div>
                                             <div class="Montant_solde">
-                                                <h4 style="color:white;">50.000 Fcfa</h4>
+                                                <h4 style="color:white;">000.000 Fcfa</h4>
                                             </div>
                                         </div>
                                     <!--container Solde employé-->

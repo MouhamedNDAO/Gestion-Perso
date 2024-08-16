@@ -1,0 +1,77 @@
+
+body{
+    padding: 10px;
+    background: #BFD4D6;
+    }
+
+
+.logout{
+    position: absolute;
+    bottom: 10;
+    width: 20rem;
+    display: flex;
+    inset-inline: none;
+    padding: 15px;
+    }
+
+#card{
+    position: absolute;
+    bottom: 300;
+    left:5%;
+    width: 70rem;
+    height: 15rem;
+    display: block;
+    background: #F1F8F3;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border-radius: 20px;
+    }
+
+ #card form{
+        padding: 10px;
+        margin: 10px;
+    }
+
+#card form input{
+    border:1px #76c0ee solid;
+    text-align: center;
+    text-justify: auto;
+    height: 2rem;
+    width: 12rem;
+    border-radius: 8px;
+}
+
+#card form input:focus{
+    border:solid 2px greenyellow;
+    cursor: pointer;
+    width: 14rem;
+    border-radius: 9px;
+}
+
+#card form button{
+    background: #76c0ee;
+    color: #000;
+    padding: 7px 15px;
+    border-radius: 10px;
+    margin-top: 15px;
+    cursor: pointer;
+    width: 120px;
+}
+
+#card form button:hover{
+    background: #F5DD08;
+    color: #fff;
+    
+}
+
+ #card h3{
+        padding: 10px;
+        text-decoration: capitalize;
+        text-align: center;
+    }
+
+h2{
+    position: absolute;
+    /* bottom: 350; */
+    left:30%;
+    }
