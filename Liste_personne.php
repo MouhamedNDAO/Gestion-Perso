@@ -13,11 +13,11 @@
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
     </head>
-    <body style = "background-image:url(img/personnels.jpg); background-size: cover">
+    <body style = "background-image:url(img/personnels.jpg); background-size: cover; background-style: fixed">
     <?php
         include "navbar.php";
         ?><br><br><br><br><br><br>
-        <h1 style="text-style:bold; align:center; text-color:white">Liste personnels</h1>
+        <h1 style="text-style:bold; right:50%; text-color:white">Liste personnels</h1>
 
         <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                     <table class="table table-bordered table-primary table-striped">
