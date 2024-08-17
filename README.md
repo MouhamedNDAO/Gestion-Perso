@@ -1,6 +1,6 @@
-# Gestion-des-Personnels-de-l-UVS
-ce site a pour but d'aider les responsables de l'Universite Virtuel du Senegal
-de bien s'occupper de la gestion du bon fonctionnement des ENO sans se perdre dans la repartition des taches quotidiennes.
+# Gestion Perso
+ce site a pour but d'aider les responsables des postes de sante et hopitaux du Senegal
+de bien s'occupper de la gestion du bon fonctionnement de leur etablissement sans se perdre dans la repartition des taches quotidiennes.
 Explication des differentes fichiers 
 connexion.php et connexion.css: Ils nous permet de s'occuper de la page de connexion du design et des fonctionnalite de la page
 contact.html et contact.css: Ils nous permet de s'occuper de la page de formulaire d'iscription du design et des fonctionnalite de la page
