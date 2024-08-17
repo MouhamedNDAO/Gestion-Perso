@@ -44,6 +44,8 @@
                         header("location:login.php");
                         }
                         }
+
+                
 ?>
 <!DOCTYPE html>
 <html>
@@ -76,6 +78,17 @@
                 <input class="input" name="time" type="time">
                 <input class="input" name="montant" type="floatval" placeholder ="Montant">
                 <button name="submit" type="submit">payer</button>
+            </form>
+        </div>
+
+        <div id="pointage">
+            <h3>Pointage</h3>
+            <form action="pointage.php" method="POST">
+                <input class="input" name="email" type="email" placeholder ="email">
+                <input class="input" name="date" type="date">
+                <input class="input" name="time" type="time">
+                <input class="input" name="statut" type="text" placeholder ="Statut">
+                <button name="submit" type="submit">Valider</button>
             </form>
         </div>
         

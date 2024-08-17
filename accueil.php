@@ -206,6 +206,9 @@
                 <li class="nav-item" role="presentation">
                     <a class="nav-link" href="#contact" data-toggle="tab"  role="tab">Calendrier des tâches</a>
                 </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" href="#pointage" data-toggle="tab"  role="tab">Pointage</a>
+                </li>
             </ul>
             <div class="tab-content" id="myTabContent">
                 <!--Liste personnel-->
@@ -385,8 +388,72 @@
                     </tbody>
                     </table>
                 </div>
+                <!-- Calendrier des taches--><!--Calendrier de tâches-->
+
+                <!--Pointage-->
+                <div class="tab-pane fade" id="pointage" role="tabpanel" aria-labelledby="pointage-tab">
+                        <div class="card bg-success">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                <img src="img/pointage.png" class="img-fluid rounded-start" alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                <div class="card-body">
+
+                                    <!--header pointage-->
+                                    <h5 class="card-title text-center" style="color:white;">Informations de Pointage</h5>
+                                    <!--header pointage-->
+
+                                    <!--Message de Bienvenue-->
+                                    <p class="card-text" style="color:white;">Bonsoir <?php echo ($usePrenom); ?> ravis de vous compter parmis nous aujourd'hui</p>
+                                    <!--Message de bienvenue-->
+
+                                    <!--Tableau Pointage-->
+                                    <table class="table  table-bordered table-striped">
+                                                <thead class="table-dark">
+                                                    <tr>
+                                                        <th scope="col">Jour</th>
+                                                        <th scope="col">Heure</th>
+                                                        <th scope="col">Statut</th>
+                                                    </tr>
+                                                </thead>
+                                                <?php
+                                                $request=$connexion->prepare("SELECT * FROM pointage WHERE email = :email ");
+                                                $request->bindValue(':email',$userEmail, PDO::PARAM_STR);
+                                                $request->execute();
+                                                while($données=$request->fetch()){
+                                                    $email=$données["email"];
+                                                    $date=$données["jours"];
+                                                    $heure=$données["heure"];
+                                                    $statut=$données["statut"];
+                                                ?>
+
+                                                <tbody class="table-light">
+                                                    <tr>
+                                                        <th scope="row"><?php echo($date);?></th>
+                                                        <td><?php echo($heure);?></td>
+                                                        <td><?php echo($statut);?></td>
+                                                    </tr>
+                                                </tbody>
+
+                                                <?php
+                                                    }
+                                                ?> 
+                                    </table>
+                                    <!--Tableau Pointage-->
+
+                                    <!--Date de mis à jour Table pointage-->
+                                        <p class="card-text" style="color:white;"><small >Last updated 29 mins ago</small></p>
+                                    <!--Date de mis à jour Table pointage-->
+
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                <!--Pointage--> 
             </div>
-            <!--Calendrier de tâches--> 
+            
            
         <!--Onglet-->
 
