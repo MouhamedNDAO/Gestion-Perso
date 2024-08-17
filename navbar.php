@@ -16,6 +16,13 @@
     <link rel="stylesheet" href="../CSS/acceuil.css">
     <!--CDN CSS-->
 
+     <!--JS Delivr-->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!--JS Delivr-->
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     
@@ -48,7 +55,7 @@
                 <div class="container-form-user-icon" style="display:flex;">
                     <div class="form-search-container">
                         <form class="form-inline">
-                            <input class="form-control" type="search" placeholder="Search" aria-label="Search" style="width:300px; height:32px;">
+                            <input class="form-control" type="search" placeholder="Search" aria-label="Search" style="width:250px; height:32px;">
                             <button class="btn bg-light btn-sm" type="submit">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path fill-rule="evenodd" d="M11.5 7a4.499 4.499 0 11-8.998 0A4.499 4.499 0 0111.5 7zm-.82 4.74a6 6 0 111.06-1.06l3.04 3.04a.75.75 0 11-1.06 1.06l-3.04-3.04z"></path></svg>
                             </button>

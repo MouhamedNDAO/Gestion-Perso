@@ -16,7 +16,7 @@ body{
 
 #card{
     position: absolute;
-    bottom: 300;
+    bottom: 320;
     left:5%;
     width: 70rem;
     height: 15rem;
@@ -78,7 +78,7 @@ h2{
 
     #pointage{
         position: absolute;
-        bottom: 25;
+        bottom: 45;
         left:5%;
         width: 70rem;
         height: 15rem;
