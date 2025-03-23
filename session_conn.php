@@ -1,7 +1,7 @@
 <?php
 
 $Db_userName = "root";
-$Db_password ="root";
+$Db_password ="";
     //ouverture d'une connexion a la  base de donne mon_projet 
         try
         {

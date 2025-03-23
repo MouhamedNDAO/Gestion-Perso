@@ -25,25 +25,31 @@
                     {
                             //Insertion dans la base de donnée
 
-                            $insertion = ("INSERT INTO 
-                            gestion (prenom , nom , email , adresse , anniversaire,fonction , specialite , sexe , password_user) 
-                            VALUES(:prenom,:nom,:email,:adresse,:anniversaire,:fonction,:specialite,:sexe,:password_user)")OR die(print_r($db->errorInfo()));
-                             
-                            $insert =$connexion->prepare($insertion);
-
-                            $insert->bindParam(':prenom', $userFirstName);
-                            $insert->bindParam(':nom', $userLastName);
-                            $insert->bindParam(':email', $email);
-                            $insert->bindParam(':adresse',$adresse);
-                            $insert->bindParam(':anniversaire',$anniversaire);
-                            $insert->bindParam(':fonction', $fonction);
-                            $insert->bindParam(':specialite',$specialite);
-                            $insert->bindParam(':sexe',$sexe);
-                            $insert->bindParam(':password_user',$password);
-
-                            $insert->execute();
-
-                            header("location:Login.php");
+                            if(!empty($_POST["prenom"]) && !empty($_POST["nom"]) && !empty($_POST["email"]) && !empty($_POST["password"]) && !empty($_POST["adresse"]) && !empty($_POST["anniversaire"]) && !empty($_POST["fonction"]) && !empty($_POST["specialite"])){
+                                $insertion = ("INSERT INTO 
+                                gestion (prenom , nom , email,password_user , adresse , anniversaire,fonction , specialite , sexe) 
+                                VALUES(:prenom,:nom,:email,:password_user,:adresse,:anniversaire,:fonction,:specialite,:sexe)")OR die(print_r($db->errorInfo()));
+                                 
+                                $insert =$connexion->prepare($insertion);
+    
+                                $insert->bindParam(':prenom', $userFirstName);
+                                $insert->bindParam(':nom', $userLastName);
+                                $insert->bindParam(':email', $email);
+                                $insert->bindParam(':password_user',$password);
+                                $insert->bindParam(':adresse',$adresse);
+                                $insert->bindParam(':anniversaire',$anniversaire);
+                                $insert->bindParam(':fonction', $fonction);
+                                $insert->bindParam(':specialite',$specialite);
+                                $insert->bindParam(':sexe',$sexe);
+    
+                                $insert->execute();
+    
+                                header("location:connexion.php");
+                             }else{
+                                header("location:Formulair_inscription.php");
+                                 echo "Votre inscription n'est pas complete";
+                             }
+                            
                     }else{
                         header("location:Formulair_inscription.php");
                         echo("somethings wrong");

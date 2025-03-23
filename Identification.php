@@ -6,7 +6,7 @@
     //connexion base de données
     include("session_conn.php");
     
-    if(isset($_POST["submit"])){
+    if(!isset($_POST["submit"])){
 
         $login = htmlspecialchars($_POST["Email"]);
         $password_use = htmlspecialchars($_POST["Password"]);

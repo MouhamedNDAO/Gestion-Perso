@@ -1,4 +1,6 @@
-
+<?php
+    include("session_conn.php");
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,6 +16,13 @@
     <link rel="stylesheet" href="../CSS/acceuil.css">
     <!--CDN CSS-->
 
+     <!--JS Delivr-->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!--JS Delivr-->
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     
@@ -24,29 +33,29 @@
 
 <!--Navbar-->
 <div class="navbar fixed-top navbar-expand-md navbar-dark primary-color">
-        <a href="../Gestion-des-Personnels-de-l-UVS/accueil.php" class="navbar-brand ">POSTE</a>
+        <a href="../gp/accueil.php" class="navbar-brand ">POSTE</a>
             <ul class="nav navbar-nav" >
             <li class="nav-item">
                     <a class="nav-link
                     font-weight-bold" 
-                    href="../Gestion-des-Personnels-de-l-UVS/accueil.php" >Accueil</a>
+                    href="../gp/accueil.php" >Accueil</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link 
                     font-weight-bold" 
-                    href="../Gestion-des-Personnels-de-l-UVS/Liste_personne.php" >Liste des Personnels</a>
+                    href="../gp/Liste_personne.php" >Liste des Personnels</a>
                 </li>
                 <li class="nav-item" >
                     <a class="nav-link
                     font-weight-bold" 
-                    href="../Gestion-des-Personnels-de-l-UVS/parametre.php">Parametres</a>
+                    href="../gp/parametre.php">Parametres</a>
                 </li>
             </ul>
             <div class="form-user-icon-main-container" style="position:relative; left:380px">
                 <div class="container-form-user-icon" style="display:flex;">
                     <div class="form-search-container">
                         <form class="form-inline">
-                            <input class="form-control" type="search" placeholder="Search" aria-label="Search" style="width:300px; height:32px;">
+                            <input class="form-control" type="search" placeholder="Search" aria-label="Search" style="width:250px; height:32px;">
                             <button class="btn bg-light btn-sm" type="submit">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path fill-rule="evenodd" d="M11.5 7a4.499 4.499 0 11-8.998 0A4.499 4.499 0 0111.5 7zm-.82 4.74a6 6 0 111.06-1.06l3.04 3.04a.75.75 0 11-1.06 1.06l-3.04-3.04z"></path></svg>
                             </button>
@@ -66,14 +75,14 @@
                                                 <span class="badge rounded-pill bg-danger">8</span>
                                             </i>
                                                 <?php
-                                                echo("<h8>".$userPrenom."</h8>");
+                                                echo("<h8>".$usePrenom."</h8>");
                                                 ?>
                                     </a>
                                     <ul class="dropdown-menu dropdown-menu-right dropdown-default" aria-labelledby="navbarScrollingDropdown">
                                         <li><a class="dropdown-item" href="#">Mon Compte</a></li>
                                        <!-- <li><a class="dropdown-item" href="#">Paramétre</a></li>-->
                                         <li><hr class="dropdown-divider"></li>
-                                        <li><a class="dropdown-item" href="#">Déconnexion</a></li>
+                                        <li><a class="dropdown-item" href="deconnexion.php">Déconnexion</a></li>
                                     </ul>
                                 </li>
                             </ul>

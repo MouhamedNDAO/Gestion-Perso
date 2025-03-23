@@ -2,7 +2,7 @@
     session_start();
 
     //connexion base de données 
-    include("Connexion_base_de_données.php");
+    include("session_conn.php");
 
     if(isset($_SESSION["Email"])){
         $userEmail = $_SESSION["Email"];
@@ -39,10 +39,20 @@
     <link rel="stylesheet" href="../CSS/acceuil.css">
     <!--CDN CSS-->
 
+    <!--JS Delivr-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!--JS Delivr-->
+
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
     
     <title>Accueil</title>
+    
     
 </head>
 <body >
@@ -191,10 +201,13 @@
                     <a class="nav-link active" href="#home" data-toggle="tab"   role="tab" >Liste Personnels Presents</a>
                 </li>
                 <li class="nav-item" role="presentation">
-                    <a class="nav-link" href="#profile" data-bs-toggle="tab"  role="tab" >Paiement</a>
+                    <a class="nav-link" href="#profile" data-toggle="tab"  role="tab" >Paiements</a>
                 </li>
                 <li class="nav-item" role="presentation">
                     <a class="nav-link" href="#contact" data-toggle="tab"  role="tab">Calendrier des tâches</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" href="#pointage" data-toggle="tab"  role="tab">Pointage</a>
                 </li>
             </ul>
             <div class="tab-content" id="myTabContent">
@@ -210,7 +223,24 @@
                                     </tr>
                                 </thead>
                                 
-                                
+                                <?php
+                                    $reponse=$connexion->query("SELECT * FROM gestion");
+                                    while($données=$reponse->fetch()){
+                                        $email=$données["email"];
+                                        $prenom=$données["prenom"];
+                                        $nom=$données["nom"];
+                                ?>
+                                      <tbody>
+                                      <tr>
+                                      <th scope="row">*</th>
+                                      <td><?php echo("<p>"."$prenom"."</p>");?></td>
+                                      <td><?php echo("<p>"."$nom"."</p>");?></td>
+                                      <td><?php echo("<p>"."$email"."</p>");?></td>
+                                      </tr>
+                                  </tbody>
+                                    <?php
+                                        }
+                                    ?> 
                                 
                             </table>
                 </div>
@@ -221,7 +251,7 @@
                         <div class="card bg-primary">
                             <div class="row g-0">
                                 <div class="col-md-4">
-                                <img src="../Image/Payement_vector.png" class="img-fluid rounded-start" alt="...">
+                                <img src="img/Payement_vector.png" class="img-fluid rounded-start" alt="...">
                                 </div>
                                 <div class="col-md-8">
                                 <div class="card-body">
@@ -245,15 +275,30 @@
                                                         <th scope="col">Montant</th>
                                                     </tr>
                                                 </thead>
+                                                <?php
+                                                $request=$connexion->prepare("SELECT * FROM payement WHERE email = :email ");
+                                                $request->bindValue(':email',$userEmail, PDO::PARAM_STR);
+                                                $request->execute();
+                                                while($données=$request->fetch()){
+                                                    $email=$données["email"];
+                                                    $date=$données["date_payement"];
+                                                    $heure=$données["heure_payement"];
+                                                    $montant=$données["montant"];
+                                                ?>
+
                                                 <tbody class="table-light">
                                                     <tr>
-                                                        <th scope="row">20</th>
+                                                        <th scope="row"><?php echo($date);?></th>
                                                         <td>Avril</td>
-                                                        <td>2024</td>
-                                                        <td>12h00</td>
-                                                        <td>50.000 Fcfa</td>
+                                                        <td>2021</td>
+                                                        <td><?php echo($heure);?></td>
+                                                        <td><?php echo($montant);?></td>
                                                     </tr>
                                                 </tbody>
+
+                                                <?php
+                                                    }
+                                                ?> 
                                     </table>
                                     <!--Tableau Payement-->
 
@@ -263,7 +308,7 @@
                                                 <h4 style="color:white;">Votre solde:</h4>
                                             </div>
                                             <div class="Montant_solde">
-                                                <h4 style="color:white;">50.000 Fcfa</h4>
+                                                <h4 style="color:white;">000.000 Fcfa</h4>
                                             </div>
                                         </div>
                                     <!--container Solde employé-->
@@ -343,8 +388,72 @@
                     </tbody>
                     </table>
                 </div>
+                <!-- Calendrier des taches--><!--Calendrier de tâches-->
+
+                <!--Pointage-->
+                <div class="tab-pane fade" id="pointage" role="tabpanel" aria-labelledby="pointage-tab">
+                        <div class="card bg-success">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                <img src="img/pointage.png" class="img-fluid rounded-start" alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                <div class="card-body">
+
+                                    <!--header pointage-->
+                                    <h5 class="card-title text-center" style="color:white;">Informations de Pointage</h5>
+                                    <!--header pointage-->
+
+                                    <!--Message de Bienvenue-->
+                                    <p class="card-text" style="color:white;">Bonsoir <?php echo ($usePrenom); ?> ravis de vous compter parmis nous aujourd'hui</p>
+                                    <!--Message de bienvenue-->
+
+                                    <!--Tableau Pointage-->
+                                    <table class="table  table-bordered table-striped">
+                                                <thead class="table-dark">
+                                                    <tr>
+                                                        <th scope="col">Jour</th>
+                                                        <th scope="col">Heure</th>
+                                                        <th scope="col">Statut</th>
+                                                    </tr>
+                                                </thead>
+                                                <?php
+                                                $request=$connexion->prepare("SELECT * FROM pointage WHERE email = :email ");
+                                                $request->bindValue(':email',$userEmail, PDO::PARAM_STR);
+                                                $request->execute();
+                                                while($données=$request->fetch()){
+                                                    $email=$données["email"];
+                                                    $date=$données["jours"];
+                                                    $heure=$données["heure"];
+                                                    $statut=$données["statut"];
+                                                ?>
+
+                                                <tbody class="table-light">
+                                                    <tr>
+                                                        <th scope="row"><?php echo($date);?></th>
+                                                        <td><?php echo($heure);?></td>
+                                                        <td><?php echo($statut);?></td>
+                                                    </tr>
+                                                </tbody>
+
+                                                <?php
+                                                    }
+                                                ?> 
+                                    </table>
+                                    <!--Tableau Pointage-->
+
+                                    <!--Date de mis à jour Table pointage-->
+                                        <p class="card-text" style="color:white;"><small >Last updated 29 mins ago</small></p>
+                                    <!--Date de mis à jour Table pointage-->
+
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                <!--Pointage--> 
             </div>
-            <!--Calendrier de tâches--> 
+            
            
         <!--Onglet-->
 

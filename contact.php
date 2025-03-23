@@ -24,8 +24,8 @@ session_start();
     <div class="row">
         <div class="col-md-3 register-left">
             <img src="https://th.bing.com/th/id/R.1488a3624a54e976ae585dd1a7481741?rik=siJ%2f7H9ppZ%2bpXw&pid=ImgRaw&r=0" alt=""/>
-            <h3>UN-CHK</h3>
-            <p>FONEK FOFOU LA!</p>
+            <h3>SEN-POSTE</h3>
+            <p>VOTRE BIEN ETRE NOTRE CREDO</p>
             <button type="submit" class="btn btn-outline-success " > <a href="connexion.php"> Se Connecter</a></button>
         </div>
         <div class="col-md-9 register-right">
